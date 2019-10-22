@@ -1,3 +1,4 @@
+require 'pry'
 class Student
   attr_accessor :id, :name, :grade
 
@@ -96,6 +97,7 @@ end
     SQL
 
     DB[:conn].execute(sql, self.name, self.grade)
+    
   end
   
   def self.create_table
